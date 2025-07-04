@@ -1,0 +1,77 @@
+/* PARTIALS */
+
+/* VARIABLES */
+:root {
+
+  /* COLORS */
+  --brand-color: #EF5F4C;
+
+  --bg-color: #FFFFFF;
+  --surface-color: #F5F5F5;
+  --skeleton-color: #D9D9D9;
+  /* --shape-transparency: #FFFFFF 56%; */
+
+  --text-color-primary: #313131;
+  --text-color-secondary: #6C6C6C;
+
+  /* FONTS */
+  --ff-sans: "Poppins" ,sans-serif;
+  --h1: 700 2rem/125% var(--ff-sans);
+  --p-md: 400 0.85rem/170% var(--ff-sans);
+  --p-sm: 400 0.75rem/170% var(--ff-sans);
+
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+
+}
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font: var(--h1);
+}
+
+a {
+  color: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* UTILITY CLASS */
+.container {
+
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-16 {
+  gap: var(--gap-1);
+}
+
+.gap-32 {
+  gap: var(--gap-2);
+}
+
+@media (width >= 80rem) {
+  :root {
+    --gap-1: 2rem;
+  }
+}
