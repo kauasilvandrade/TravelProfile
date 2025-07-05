@@ -1,0 +1,20 @@
+header {
+
+  & a {
+    gap: 0.85rem;
+
+    &:hover {
+      color: var(--brand-color);
+
+      svg path {
+        fill: red;
+      }
+
+    }
+
+  }
+
+  & ul li:nth-child(3) {
+    width: 2.5rem;
+  }
+}

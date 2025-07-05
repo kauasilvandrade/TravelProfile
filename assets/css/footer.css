@@ -1,0 +1,15 @@
+footer {
+  justify-content: center;
+  text-align: center;
+}
+
+@media (width >= 80rem) { 
+  footer {
+    text-align: left;
+
+    & > .flex {
+      margin-left: auto;
+    }
+  }
+
+}

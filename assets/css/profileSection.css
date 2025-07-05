@@ -1,0 +1,42 @@
+.profileSection {
+  background-color: var(--surface-color);
+
+  & .container {
+    padding: 2rem;
+
+   & div.flex {
+      flex-direction: column;
+    }
+
+    & ul[role="list"] {
+      
+      li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      li + li {
+        margin-top: 1rem;
+      }
+
+    }
+
+  }
+
+}
+
+@media (width >= 80rem) {
+  & .profileSection {
+    .container {
+      & div.flex {
+        flex-direction: row;
+      }
+
+      /* & ul[role="list"] {
+        margin-left: auto;
+        width: 17.5rem;
+      } */
+    }
+  }
+}

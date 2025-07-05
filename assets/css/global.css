@@ -17,7 +17,7 @@
   /* FONTS */
   --ff-sans: "Poppins" ,sans-serif;
   --h1: 700 1.5rem/125% var(--ff-sans);
-  --p-md: 400 0.85rem/170% var(--ff-sans);
+  --p-md: 400 1rem/170% var(--ff-sans);
   --p-sm: 400 0.75rem/170% var(--ff-sans);
 
   --padding-block: 1rem;
@@ -105,9 +105,6 @@ img {
   gap: var(--gap-1);
 }
 
-.gap-32 {
-  gap: var(--gap-2);
-}
 
 @media (width >= 80rem) {
   :root {
