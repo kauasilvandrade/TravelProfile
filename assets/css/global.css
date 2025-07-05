@@ -20,6 +20,8 @@
   --p-md: 400 0.85rem/170% var(--ff-sans);
   --p-sm: 400 0.75rem/170% var(--ff-sans);
 
+  --padding-block: 1rem;
+  --padding-inline: 1rem;
   --gap-1: 1rem;
   --gap-2: 2rem;
 
@@ -51,11 +53,22 @@ img {
 
 /* UTILITY CLASS */
 .container {
-
+  --max-width: 360px;
+  width: min(var(--max-width), 100% - var(--padding-block) * 2);
+  margin-inline: auto;
 }
 
-.flex {
-  display: flex;
+.desktop-only {
+  display: none;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
 }
 
 .items-center {
@@ -74,4 +87,18 @@ img {
   :root {
     --gap-1: 2rem;
   }
+
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
 }
