@@ -33,10 +33,10 @@
         flex-direction: row;
       }
 
-      /* & ul[role="list"] {
+      & ul[role="list"] {
         margin-left: auto;
         width: 17.5rem;
-      } */
+      } 
     }
   }
 }
